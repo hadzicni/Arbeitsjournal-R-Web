@@ -1,0 +1,41 @@
+---
+title: "Arbeitsjournal Nikola Hadzic"
+format: html
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+ 
+library(httr)
+library(knitr)
+library(readr)
+
+token <- "9349A933594825068992F7D052B4EE30"
+url <- "https://fxdbk.usb.ch/api/"
+ 
+formData <- list(
+    "token" = token,
+    content = 'report',
+    format = 'csv',
+    report_id = '225',
+    csvDelimiter = ',',
+    rawOrLabel = 'label',
+    rawOrLabelHeaders = 'raw',
+    exportCheckboxLabel = 'true',
+    returnFormat = 'csv'
+)
+response <- POST(url, body = formData, encode = "form")
+
+content_type <- headers(response)$`content-type`
+data <- content(response, type = "text")
+
+
+df <- read_csv(data)
+
+kable(df, caption = "© Arbeitsjournal Nikola Hadzic")
+```
+
+ 
