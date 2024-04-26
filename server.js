@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbeitsjournal Optionen</title>
+    <title>Arbeitsjournal Nikola Hadzic</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -57,8 +57,8 @@ app.get('/', (req, res) => {
 </head>
 <body>
     <div id="container">
-        <h1>Arbeitsjournal Optionen</h1>
-        <button onclick="fetch('/run-script', { method: 'POST' }).then(response => response.text()).then(data => alert(data)).catch(err => alert('Error: ' + err))">Journal rendern</button>
+        <h1>Arbeitsjournal</h1>
+        <button onclick="fetch('/run-script', { method: 'POST' }).then(response => response.text()).then(data => alert(data)).catch(err => agit lert('Error: ' + err))">Journal rendern</button>
         <button class="margin-top" onclick="window.location.href='https://fxdbk.usb.ch/surveys/?s=AWTR4W8HNF33TFWM';">Eintrag schreiben</button>
     </div>
 </body>
