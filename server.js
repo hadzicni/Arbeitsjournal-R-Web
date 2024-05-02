@@ -59,7 +59,7 @@ app.get('/', (req, res) => {
     <div id="container">
         <h1>Arbeitsjournal</h1>
         <button onclick="fetch('/run-script', { method: 'POST' }).then(response => response.text()).then(data => alert(data)).catch(err => agit lert('Error: ' + err))">Journal rendern</button>
-        <button class="margin-top" onclick="window.location.href='https://fxdbk.usb.ch/surveys/?s=AWTR4W8HNF33TFWM';">Eintrag schreiben</button>
+        <button class="margin-top" onclick="window.location.href='LINK_TO_THE_SURVEY';">Eintrag schreiben</button>
     </div>
 </body>
 </html>
