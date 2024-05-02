@@ -13,7 +13,7 @@ library(httr)
 library(knitr)
 library(readr)
 
-token <- "9349A933594825068992F7D052B4EE30"
+token <- "API_TOKEN"
 url <- "https://fxdbk.usb.ch/api/"
  
 formData <- list(
